@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "qxVideoDoor"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A video open door SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  #  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@github.com:ltchen5555/videoDoor.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ltchen5555/videoDoor.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
