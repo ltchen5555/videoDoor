@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "qxVideoDoor/**/*.{h,m}"
+  # spec.source_files  = "qxVideoDoor/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -117,7 +117,10 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+ spec.vendored_frameworks = [
+    'Frameworks/JsstMediaSDK.framework',
+    'Frameworks/JsstVoipSDK.framework'
+  ]
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
