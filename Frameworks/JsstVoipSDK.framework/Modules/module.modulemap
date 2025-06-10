@@ -1,0 +1,6 @@
+framework module JsstVoipSDK {
+  umbrella header "JsstVoipSDK.h"
+  export *
+
+  module * { export * }
+}
