@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "qxVideoDoor"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.6"
   spec.summary      = "A video open door SDK for iOS."
   spec.description  = <<-DESC
     qxVideoDoor 是一个为智能视频门铃设备设计的 iOS SDK，支持视频流播放、设备控制等功能。
