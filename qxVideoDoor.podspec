@@ -11,10 +11,12 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "14.0"
   spec.source       = { :git => "https://github.com/ltchen5555/videoDoor.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = [
-    'Frameworks/JsstMediaSDK.framework',
-    'Frameworks/JsstVoipSDK.framework'
+    'Frameworks/TXLiteAVSDK_TRTC.framework'
   ]
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
+  spec.pod_target_xcconfig = {
+  'VALID_ARCHS' => 'arm64',
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+}
   spec.frameworks   = 'AVFoundation', 'CoreMedia', 'CoreAudio', 'AudioToolbox'
   spec.requires_arc = true
   spec.swift_version = '5.0'
